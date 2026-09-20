@@ -1,15 +1,15 @@
 # 6 Вариант
 # 33 задача
 
-dict1 = {1,2,3}
-dict2 = set()
-dict2.add(1)
-dict2.add(2)
-dict2.add(3)
-dict3 = set('hello')
-dict4 = set([1,2,3,4,4,4,5,6])
+set1 = {1,2,3}
+set2 = set()
+set1.add(1)
+set1.add(2)
+set1.add(3)
+set3 = set('hello')
+set4 = set([1,2,3,4,4,4,5,6])
 
-print(dict1)
-print(dict2)
-print(dict3)
-print(dict4)
+print(set1)
+print(set2)
+print(set3)
+print(set4)

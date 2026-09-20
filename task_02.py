@@ -6,18 +6,18 @@
 а вторая - с четными.
 """
 
-def process_string(str):
+def split_two_strings_by_idx(input_str):
 
     builder1 = ""
     builder2 = ""
 
-    for i in range(0, len(str)):
+    for i in range(0, len(input_str)):
         if i % 2:
-            builder1 += str[i]
+            builder1 += input_str[i]
         else:
-            builder2 += str[i]
+            builder2 += input_str[i]
 
     return (builder1, builder2)
 
-print(process_string("Привет"))
-print(process_string("123456"))
+print(split_two_strings_by_idx("Привет"))
+print(split_two_strings_by_idx("123456"))

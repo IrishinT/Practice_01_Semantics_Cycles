@@ -1,0 +1,5 @@
+.idea
+__pycache__
+data.pkl
+employee.json
+task_06.txt

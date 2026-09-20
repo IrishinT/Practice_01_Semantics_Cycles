@@ -6,9 +6,9 @@
 """
 
 
-dict = {0: 10, 1: 20}
+new_dict = {0: 10, 1: 20}
 
 for i in range(2, 9):
-    dict[i] = (10 * (i+1))
+    new_dict[i] = (10 * (i+1))
 
-print(dict)
+print(new_dict)
