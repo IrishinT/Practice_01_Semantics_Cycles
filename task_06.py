@@ -7,17 +7,16 @@
 """
 
 def writeToFileAndOutput(path, text):
-    file = open(path, 'a+')
+    with open(path, 'a+', encoding='utf-8') as file:
+        file.write(text + "\n")
+        file.seek(0)
 
-    file.write(text + "\n")
-
-    for line in file:
-        print(line)
+        for line in file:
+            print(line)
 
 def countLinesInFile(path):
-    file = open(path, 'r')
-
-    return sum(1 for line in file)
+    with open(path, 'r', encoding='utf-8') as file:
+        return sum(1 for _ in file)
 
 filePath = 'task_06.txt'
 
